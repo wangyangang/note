@@ -1,5 +1,6 @@
 # django路由url分发
 
+## 1. 基本使用
 - 项目的urls.py文件
 
 ```python
@@ -23,3 +24,21 @@ urlpatterns = [
     re_path(r'^books', BookInfoListView.as_view(template_name='books.html'), name='books'),
 ]
 ```
+
+## 2. 获取参数
+
+- 位置参数
+```python
+url(r'^delete(\d+)/$',views.show_arg),
+
+def show_arg(request,id):
+    return HttpResponse('show arg %s'%id)
+```
+- 关键字参数
+```python
+url(r'^delete(?P<id1>\d+)/$',views.show_arg),
+
+def show_arg(request,id1):
+    return HttpResponse('show %s'%id1)
+```
+> 注意：视图show_arg此时必须要有一个参数名为id1，否则报错。

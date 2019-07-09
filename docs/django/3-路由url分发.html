@@ -322,6 +322,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="django&#x8DEF;&#x7531;url&#x5206;&#x53D1;">django&#x8DEF;&#x7531;url&#x5206;&#x53D1;</h1>
+<h2 id="1-&#x57FA;&#x672C;&#x4F7F;&#x7528;">1. &#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
 <ul>
 <li>&#x9879;&#x76EE;&#x7684;urls.py&#x6587;&#x4EF6;</li>
 </ul>
@@ -344,6 +345,23 @@ urlpatterns = [
     re_path(<span class="hljs-string">r&apos;^books&apos;</span>, BookInfoListView.as_view(template_name=<span class="hljs-string">&apos;books.html&apos;</span>), name=<span class="hljs-string">&apos;books&apos;</span>),
 ]
 </code></pre>
+<h2 id="2-&#x83B7;&#x53D6;&#x53C2;&#x6570;">2. &#x83B7;&#x53D6;&#x53C2;&#x6570;</h2>
+<ul>
+<li>&#x4F4D;&#x7F6E;&#x53C2;&#x6570;
+```python
+url(r&apos;^delete(\d+)/$&apos;,views.show_arg),</li>
+</ul>
+<p>def show_arg(request,id):
+    return HttpResponse(&apos;show arg %s&apos;%id)</p>
+<pre><code>- &#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;
+```python
+url(r&apos;^delete(?P&lt;id1&gt;\d+)/$&apos;,views.show_arg),
+
+def show_arg(request,id1):
+    return HttpResponse(&apos;show %s&apos;%id1)
+</code></pre><blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x89C6;&#x56FE;show_arg&#x6B64;&#x65F6;&#x5FC5;&#x987B;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x540D;&#x4E3A;id1&#xFF0C;&#x5426;&#x5219;&#x62A5;&#x9519;&#x3002;</p>
+</blockquote>
 
                                 
                                 </section>
@@ -387,7 +405,7 @@ urlpatterns = [
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.路由url分发","level":"1.2.3","depth":2,"next":{"title":"4.模型的使用","level":"1.2.4","depth":2,"path":"django/4-模型的使用.md","ref":"django/4-模型的使用.md","articles":[]},"previous":{"title":"2.Admin的使用","level":"1.2.2","depth":2,"path":"django/2-Admin的使用.md","ref":"django/2-Admin的使用.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"django/3-路由url分发.md","mtime":"2019-07-07T16:08:56.298Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-09T06:29:35.575Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.路由url分发","level":"1.2.3","depth":2,"next":{"title":"4.模型的使用","level":"1.2.4","depth":2,"path":"django/4-模型的使用.md","ref":"django/4-模型的使用.md","articles":[]},"previous":{"title":"2.Admin的使用","level":"1.2.2","depth":2,"path":"django/2-Admin的使用.md","ref":"django/2-Admin的使用.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"django/3-路由url分发.md","mtime":"2019-07-09T19:21:38.433Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-09T19:23:24.208Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

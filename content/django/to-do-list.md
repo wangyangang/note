@@ -1,0 +1,3 @@
+- redis 储存session
+- 验证码复习
+- FDFS复习
