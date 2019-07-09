@@ -1,0 +1,550 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6.类视图 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="to-do-list.html" />
+    
+    
+    <link rel="prev" href="5-自定义标签和过滤器.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../django.html">
+            
+                <a href="../django.html">
+            
+                    
+                    django
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1-基础.html">
+            
+                <a href="1-基础.html">
+            
+                    
+                    1.基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2-Admin的使用.html">
+            
+                <a href="2-Admin的使用.html">
+            
+                    
+                    2.Admin的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3-路由url分发.html">
+            
+                <a href="3-路由url分发.html">
+            
+                    
+                    3.路由url分发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="4-模型的使用.html">
+            
+                <a href="4-模型的使用.html">
+            
+                    
+                    4.模型的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="5-自定义标签和过滤器.html">
+            
+                <a href="5-自定义标签和过滤器.html">
+            
+                    
+                    5.自定义标签和过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="6-类视图.html">
+            
+                <a href="6-类视图.html">
+            
+                    
+                    6.类视图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="to-do-list.html">
+            
+                <a href="to-do-list.html">
+            
+                    
+                    to-do-list
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../mysql.html">
+            
+                <a href="../mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../mysql/primary.html">
+            
+                <a href="../mysql/primary.html">
+            
+                    
+                    primary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../web.html">
+            
+                <a href="../web.html">
+            
+                    
+                    web
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../web/css设置表格边框合并.html">
+            
+                <a href="../web/css设置表格边框合并.html">
+            
+                    
+                    css设置表格边框合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6.类视图</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django&#x7C7B;&#x89C6;&#x56FE;">django&#x7C7B;&#x89C6;&#x56FE;</h1>
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<ul>
+<li><a href="#django&#x7C7B;&#x89C6;&#x56FE;">django&#x7C7B;&#x89C6;&#x56FE;</a><ul>
+<li><a href="#1-&#x57FA;&#x672C;&#x89C6;&#x56FE;">1 &#x57FA;&#x672C;&#x89C6;&#x56FE;</a><ul>
+<li><a href="#view">View</a></li>
+<li><a href="#templateview">TemplateView</a></li>
+<li><a href="#redirectview">RedirectView</a></li>
+</ul>
+</li>
+<li><a href="#2-&#x901A;&#x7528;&#x7684;&#x663E;&#x793A;&#x89C6;&#x56FE;">2 &#x901A;&#x7528;&#x7684;&#x663E;&#x793A;&#x89C6;&#x56FE;</a><ul>
+<li><a href="#21-&#x5217;&#x8868;&#x89C6;&#x56FE;listview">2.1 &#x5217;&#x8868;&#x89C6;&#x56FE;&#xFF08;ListView&#xFF09;</a><ul>
+<li><a href="#1-&#x663E;&#x793A;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x4E00;&#x822C;&#x7528;listview&#x7684;&#x5B50;&#x7C7B;">1 &#x663E;&#x793A;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF08;&#x4E00;&#x822C;&#x7528;ListView&#x7684;&#x5B50;&#x7C7B;&#xFF09;</a></li>
+<li><a href="#2-&#x8FC7;&#x6EE4;&#x6570;&#x636E;">2 &#x8FC7;&#x6EE4;&#x6570;&#x636E;</a><ul>
+<li><a href="#21-&#x540E;&#x53F0;&#x8FC7;&#x6EE4;">2.1 &#x540E;&#x53F0;&#x8FC7;&#x6EE4;</a></li>
+<li><a href="#22-&#x52A8;&#x6001;&#x8FC7;&#x6EE4;&#x6839;&#x636E;url&#x53C2;&#x6570;&#x8FC7;&#x6EE4;&#x4E00;&#x822C;&#x7528;detailview&#x7684;&#x5B50;&#x7C7B;">2.2 &#x52A8;&#x6001;&#x8FC7;&#x6EE4;&#xFF08;&#x6839;&#x636E;url&#x53C2;&#x6570;&#x8FC7;&#x6EE4;&#xFF09;&#xFF08;&#x4E00;&#x822C;&#x7528;DetailView&#x7684;&#x5B50;&#x7C7B;&#xFF09;</a></li>
+</ul>
+</li>
+<li><a href="#3-&#x6267;&#x884C;&#x989D;&#x5916;&#x7684;&#x64CD;&#x4F5C;&#x6BD4;&#x5982;&#x66F4;&#x65B0;lastaccessed&#x5B57;&#x6BB5;">3 &#x6267;&#x884C;&#x989D;&#x5916;&#x7684;&#x64CD;&#x4F5C;&#xFF08;&#x6BD4;&#x5982;&#x66F4;&#x65B0;last_accessed&#x5B57;&#x6BB5;&#xFF09;</a></li>
+</ul>
+</li>
+<li><a href="#22-&#x8BE6;&#x7EC6;&#x89C6;&#x56FE;detailview">2.2 &#x8BE6;&#x7EC6;&#x89C6;&#x56FE;&#xFF08;DetailView&#xFF09;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h2 id="1-&#x57FA;&#x672C;&#x89C6;&#x56FE;">1 &#x57FA;&#x672C;&#x89C6;&#x56FE;</h2>
+<h3 id="view">View</h3>
+<p></p>
+<blockquote>
+<p>&#x7C7B;django.views.generic.base.View&#xFF0C;&#x4E00;&#x822C;&#x7528;&#x4F5C;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#x8C03;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x51FD;&#x6570;&#xFF08;get&#xFF0C;post&#x7B49;&#xFF09;</p>
+</blockquote>
+<p>&#x793A;&#x4F8B;views.py:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> HttpResponse
+<span class="hljs-keyword">from</span> django.views <span class="hljs-keyword">import</span> views
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IndexView</span><span class="hljs-params">(View)</span>:</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get</span><span class="hljs-params">(self, request, *args, **kwargs)</span>:</span>
+    <span class="hljs-keyword">return</span> HttpResponse(<span class="hljs-string">&apos;index page&apos;</span>)
+</code></pre>
+<p>&#x793A;&#x4F8B;urls.py:</p>
+<pre><code class="lang-python">re_path(<span class="hljs-string">r&apos;^index&apos;</span>, IndexView.as_view(), name=<span class="hljs-string">&apos;index&apos;</span>)
+</code></pre>
+<h3 id="templateview">TemplateView</h3>
+<p>&#x7C7B;django.views.generic.base.TemplateView</p>
+<blockquote>
+<p>&#x6E32;&#x67D3;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;&#x7684;&#x6A21;&#x677F;,&#x5176;&#x4E0A;&#x4E0B;&#x6587;&#x5305;&#x542B;&#x4ECE;URL&#x6355;&#x83B7;&#x7684;&#x53C2;&#x6570;
+&#x793A;&#x4F8B;views.py&#xFF1A;</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.views.generic.base <span class="hljs-keyword">import</span> TemplateView
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoListView</span><span class="hljs-params">(TemplateView)</span>:</span>
+    template_name = <span class="hljs-string">&apos;books.html&apos;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_context_data</span><span class="hljs-params">(self, **kwargs)</span>:</span>
+        books = BookInfo.objects.all()
+        context = super().get_context_data(**kwargs)
+        context[<span class="hljs-string">&apos;books&apos;</span>] = books
+        <span class="hljs-keyword">return</span> context
+</code></pre>
+<p>&#x793A;&#x4F8B;urls.py:</p>
+<pre><code class="lang-python">urlpatterns = [
+<span class="hljs-comment"># re_path(r&apos;^books&apos;, BookInfoListView.as_view(template_name=&apos;books.html&apos;), name=&apos;books&apos;),</span>
+   re_path(<span class="hljs-string">r&apos;^books&apos;</span>, BookInfoListView.as_view(), name=<span class="hljs-string">&apos;books&apos;</span>),
+   ]
+</code></pre>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x5728;url&#x7684;TemplateView&#x7684;as_view&#x51FD;&#x6570;&#x91CC;&#xFF0C;&#x4F20;&#x4E86;template_name&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;TemplateView&#x7C7B;&#x91CC;&#xFF0C;&#x53EF;&#x4EE5;&#x4E0D;&#x7ED9;template_name&#x5B57;&#x6BB5;&#x8D4B;&#x503C;&#xFF1B;
+&#x5982;&#x679C;url&#x6CA1;&#x4F20;&#x8BE5;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;Template_View&#x7C7B;&#x91CC;&#x5FC5;&#x987B;&#x8D4B;&#x503C;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x62A5;&#x9519;.</p>
+</blockquote>
+<h3 id="redirectview">RedirectView</h3>
+<hr>
+<h2 id="2-&#x901A;&#x7528;&#x7684;&#x663E;&#x793A;&#x89C6;&#x56FE;">2 &#x901A;&#x7528;&#x7684;&#x663E;&#x793A;&#x89C6;&#x56FE;</h2>
+<h3 id="21-&#x5217;&#x8868;&#x89C6;&#x56FE;&#xFF08;listview&#xFF09;">2.1 &#x5217;&#x8868;&#x89C6;&#x56FE;&#xFF08;ListView&#xFF09;</h3>
+<h4 id="1-&#x663E;&#x793A;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF08;&#x4E00;&#x822C;&#x7528;listview&#x7684;&#x5B50;&#x7C7B;&#xFF09;">1 &#x663E;&#x793A;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF08;&#x4E00;&#x822C;&#x7528;ListView&#x7684;&#x5B50;&#x7C7B;&#xFF09;</h4>
+<blockquote>
+<p>&#x89C6;&#x56FE;&#x91CC;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x96C6;&#x6210;ListView&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x5E76;&#x6307;&#x5B9A;model</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoListView2</span><span class="hljs-params">(ListView)</span>:</span>
+    model = BookInfo
+</code></pre>
+<pre><code class="lang-python">re_path(<span class="hljs-string">r&apos;^books/&apos;</span>, BookInfoListView2.as_view(), name=<span class="hljs-string">&apos;books&apos;</span>),
+</code></pre>
+<blockquote>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5411;&#x89C6;&#x56FE;&#x4E2D;&#x6DFB;&#x52A0;template_name&#x5C5E;&#x6027;&#x6765;&#x660E;&#x786E;&#x5730;&#x544A;&#x8BC9;&#x89C6;&#x56FE;&#x4F7F;&#x7528;&#x54EA;&#x4E2A;&#x6A21;&#x677F;&#xFF0C;&#x6216;&#x8005;&#x5728;url&#x91CC;&#x5199;&#x660E;&#x6A21;&#x677F;&#x540D;&#x79F0;:<code>BookInfoListView2.as_view(template_name=&apos;abc.html&apos;)</code>.&#x4F46;&#x662F;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x6A21;&#x677F;&#xFF0C;Django&#x4F1A;&#x4ECE;&#x5BF9;&#x8C61;&#x7684;&#x540D;&#x79F0;&#x4E2D;&#x63A8;&#x65AD;&#x51FA;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x3002; &#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x63A8;&#x65AD;&#x7684;&#x6A21;&#x677F;&#x5C06;&#x4E3A;&quot;app01/bookinfo_list.html&quot; - &#x201C;app01&#x201D;&#x90E8;&#x5206;&#x6765;&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x540D;&#x79F0;&#xFF0C;&#x800C;&#x201C;bookinfo&#x201D;&#x662F;&#x5C0F;&#x5199;&#x7684;&#x6A21;&#x578B;&#x540D;&#x79F0;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x6A21;&#x677F;&#x5C06;&#x4F1A;&#x4F9D;&#x636E;&#x4E8E;&#x4E00;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x6765;&#x6E32;&#x67D3;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;object_list&#x5305;&#x542B;&#x6240;&#x6709;publisher&#x5BF9;&#x8C61;&#x7684;&#x53D8;&#x91CF; :</p>
+</blockquote>
+<pre><code class="lang-django"><span class="xml"></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">for</span></span> book <span class="hljs-keyword">in</span> object_list %}</span><span class="xml">
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> book.id|mod2 %}</span><span class="xml">
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span></span><span class="hljs-template-variable">{{ book.id }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span></span><span class="hljs-template-variable">{{ book.name }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</span></code></pre>
+<p>&#x4EE5;&#x4E0A;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6700;&#x7B80;&#x5355;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x901A;&#x7528;&#x89C6;&#x56FE;</p>
+<ul>
+<li>&#x5236;&#x4F5C;&#x53CB;&#x597D;&#x6A21;&#x677F;&#x4E0A;&#x4E0B;&#x6587;
+&gt; &#x5728;&#x89C6;&#x56FE;&#x91CC;&#x6DFB;&#x52A0;context_object_name&#x5B57;&#x6BB5;&#xFF0C;&#x4EE5;&#x540E;&#x6A21;&#x677F;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x8BE5;&#x5B57;&#x6BB5;&#x6765;&#x53D6;&#x6570;&#x636E;&#x4E86;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoListView2</span><span class="hljs-params">(ListView)</span>:</span>
+    model = BookInfo
+    context_object_name = <span class="hljs-string">&apos;book_list&apos;</span>
+</code></pre>
+<h4 id="2-&#x8FC7;&#x6EE4;&#x6570;&#x636E;">2 &#x8FC7;&#x6EE4;&#x6570;&#x636E;</h4>
+<blockquote>
+<p>&#x6211;&#x4EEC;&#x53EA;&#x7ED9;&#x7C7B;&#x89C6;&#x56FE;&#x7684;model&#x8D4B;&#x503C;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#xFF1A;<code>queryset = BookInfo.objects.all()</code>.&#x76F8;&#x5F53;&#x4E8E;&#x53D6;&#x51FA;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x7ED9;queryset&#x5B57;&#x6BB5;&#x8D4B;&#x503C;</p>
+</blockquote>
+<h5 id="21-&#x540E;&#x53F0;&#x8FC7;&#x6EE4;">2.1 &#x540E;&#x53F0;&#x8FC7;&#x6EE4;</h5>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookInfoList</span><span class="hljs-params">(ListView)</span>:</span>
+    queryset = BookInfo.objects.filter(name=<span class="hljs-string">&apos;&#x4E09;&#x56FD;&#x6F14;&#x4E49;&apos;</span>)
+</code></pre>
+<h5 id="22-&#x52A8;&#x6001;&#x8FC7;&#x6EE4;&#xFF08;&#x6839;&#x636E;url&#x53C2;&#x6570;&#x8FC7;&#x6EE4;&#xFF09;&#xFF08;&#x4E00;&#x822C;&#x7528;detailview&#x7684;&#x5B50;&#x7C7B;&#xFF09;">2.2 &#x52A8;&#x6001;&#x8FC7;&#x6EE4;&#xFF08;&#x6839;&#x636E;url&#x53C2;&#x6570;&#x8FC7;&#x6EE4;&#xFF09;&#xFF08;&#x4E00;&#x822C;&#x7528;DetailView&#x7684;&#x5B50;&#x7C7B;&#xFF09;</h5>
+<pre><code class="lang-python">urlpatterns = [
+    <span class="hljs-comment">#...</span>
+    url(<span class="hljs-string">r&apos;^authors/(?P&lt;pk&gt;[0-9]+)/$&apos;</span>, AuthorDetailView.as_view(), name=<span class="hljs-string">&apos;author-detail&apos;</span>),
+]
+</code></pre>
+<blockquote>
+<p>pk&#x662F;&#x4E3B;&#x952E;&#x7684;&#x610F;&#x601D;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x6839;&#x636E;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;id&#x5217;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#xFF0C;url&#x6B63;&#x5219;&#x5206;&#x7EC4;&#x540D;&#x5FC5;&#x987B;&#x53EB;pk&#x624D;&#x80FD;&#x6839;&#x636E;id&#x8FDB;&#x884C;&#x7B5B;&#x9009;&#x3002;&#x8FD9;&#x6837;&#x5728;url&#x91CC;&#x5199;&#x597D;&#x540E;&#xFF0C;&#x540E;&#x53F0;&#x5F97;&#x5230;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5C31;&#x662F;&#x6839;&#x636E;pk&#x503C;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#x4E4B;&#x540E;&#x7684;&#x6570;&#x636E;&#x4E86;</p>
+</blockquote>
+<pre><code class="lang-python">urlpatterns = [
+    url(<span class="hljs-string">r&apos;^(?P&lt;slug&gt;[-\w]+)/$&apos;</span>, ArticleDetailView.as_view(), name=<span class="hljs-string">&apos;article-detail&apos;</span>),
+]
+</code></pre>
+<blockquote>
+<p>&#x8FD9;&#x91CC;&#x7684;slug&#xFF0C;&#x662F;&#x6570;&#x636E;&#x5E93;&#x91CC;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x4E00;&#x822C;&#x4F5C;&#x4E3A;&#x535A;&#x5BA2;&#x6587;&#x7AE0;&#x7684;&#x9759;&#x6001;&#x540D;&#x79F0;&#x5B58;&#x5728;&#x3002;&#x4E5F;&#x5FC5;&#x987B;&#x53EB;&#x8FD9;&#x4E2A;&#x540D;&#x5B57;&#xFF0C;&#x4E0D;&#x80FD;&#x66F4;&#x6539;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;slug&#x5B57;&#x6BB5;&#xFF0C;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+</blockquote>
+<h4 id="3-&#x6267;&#x884C;&#x989D;&#x5916;&#x7684;&#x64CD;&#x4F5C;&#xFF08;&#x6BD4;&#x5982;&#x66F4;&#x65B0;lastaccessed&#x5B57;&#x6BB5;&#xFF09;">3 &#x6267;&#x884C;&#x989D;&#x5916;&#x7684;&#x64CD;&#x4F5C;&#xFF08;&#x6BD4;&#x5982;&#x66F4;&#x65B0;last_accessed&#x5B57;&#x6BB5;&#xFF09;</h4>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AuthorDetailView</span><span class="hljs-params">(DetailView)</span>:</span>
+
+    queryset = Author.objects.all()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_object</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment"># Call the superclass</span>
+        object = super(AuthorDetailView, self).get_object()
+        <span class="hljs-comment"># Record the last accessed date</span>
+        object.last_accessed = timezone.now()
+        object.save()
+        <span class="hljs-comment"># Return the object</span>
+        <span class="hljs-keyword">return</span> object
+</code></pre>
+<h3 id="22-&#x8BE6;&#x7EC6;&#x89C6;&#x56FE;&#xFF08;detailview&#xFF09;">2.2 &#x8BE6;&#x7EC6;&#x89C6;&#x56FE;&#xFF08;DetailView&#xFF09;</h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5-自定义标签和过滤器.html" class="navigation navigation-prev " aria-label="Previous page: 5.自定义标签和过滤器">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="to-do-list.html" class="navigation navigation-next " aria-label="Next page: to-do-list">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6.类视图","level":"1.2.6","depth":2,"next":{"title":"to-do-list","level":"1.2.7","depth":2,"path":"django/to-do-list.md","ref":"django/to-do-list.md","articles":[]},"previous":{"title":"5.自定义标签和过滤器","level":"1.2.5","depth":2,"path":"django/5-自定义标签和过滤器.md","ref":"django/5-自定义标签和过滤器.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"django/6-类视图.md","mtime":"2019-07-08T12:25:19.790Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-09T06:29:35.575Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

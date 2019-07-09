@@ -1,10 +1,15 @@
 # Summary
 
 * [Introduction](README.md)
-* [mysql教程](chapter1.md)
-* [django教程](djangojiao-cheng.md)
-  * [1基础](djangojiao-cheng/1ji-chu.md)
-  * [2提高](djangojiao-cheng/2ti-gao.md)
-  * [3升级](djangojiao-cheng/3sheng-ji.md)
-* [python教程](pythonjiao-cheng.md)
-
+* [django](django.md)
+ * [1.基础](django/1-基础.md)
+ * [2.Admin的使用](django/2-Admin的使用.md)
+ * [3.路由url分发](django/3-路由url分发.md)
+ * [4.模型的使用](django/4-模型的使用.md)
+ * [5.自定义标签和过滤器](django/5-自定义标签和过滤器.md)
+ * [6.类视图](django/6-类视图.md)
+ * [to-do-list](django/to-do-list.md)
+* [mysql](mysql.md)
+ * [primary](mysql/primary.md)
+* [web](web.md)
+ * [css设置表格边框合并](web/css设置表格边框合并.md)
